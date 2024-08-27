@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfólio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Container que "segura" o conteúdo do site -->
+		<div class="container">
+			<header>
+				<a href="/">
+					<h1 id="titulo">Bruno Bulgaron</h1>
+				</a>
+
+				<!-- Menu -->
+				<ul class="menu">
+					<li>
+						<a href="#sobre-mim">Sobre mim</a>
+					</li>
+					<li>
+						<a href="#formacao">Formação</a>
+					</li>
+					<li>
+						<a href="#portfolio">Portfólio</a>
+					</li>
+					<li>
+						<a href="#contato">Contato</a>
+					</li>
+				</ul>
+			</header>
+
+			<!-- Seção "Sobre mim" -->
+			<section id="sobre-mim">
+				<h1>Sobre mim</h1>
+
+				<p>Olá, seja bem vindo(a)!</p>
+				<p>
+					Sou um desenvolvedor atualmente cursando
+					<strong>Análise e Desenvolvimento de Sistemas</strong> na Uninter.
+					Esse site foi desenvolvido para aplicar conceitos de HTML e CSS
+					apresentados na disciplina de "Fundamentos da Programação Web".
+				</p>
+			</section>
+
+			<!-- Seção "Formação" -->
+			<section id="formacao">
+				<h1>Formação</h1>
+
+				<ul>
+					<li>- Uninter 2024 - 2026</li>
+				</ul>
+			</section>
+
+			<!-- Seção "Portfólio" -->
+			<section id="portfolio">
+				<h1>Portfólio</h1>
+
+				<div>
+					<img
+						src="assets/logo-github.svg"
+						alt="Logo Github"
+						id="logo-github"
+					/>
+					<a href="https://github.com/brunobulgaron/heic-converter"
+						>heic-converter</a
+					>
+					<a href="https://github.com/brunobulgaron/spotenu-backend"
+						>spotenu-backend</a
+					>
+					<a href="https://github.com/brunobulgaron/tailwind-landing-page"
+						>tailwind-landing-page</a
+					>
+				</div>
+			</section>
+
+			<!-- Seção "Contato" -->
+			<section id="contato">
+				<h1>Contato</h1>
+
+				<!-- Formulário (não funciona, apenas para fins de demonstração) -->
+				<form class="form-contato" onsubmit="return false;">
+					<input type="text" name="nome" id="nome" placeholder="Nome" />
+					<input type="email" name="email" id="email" placeholder="E-mail" />
+					<textarea id="mensagem" placeholder="Mensagem"></textarea>
+
+					<span>Apenas para fins de demonstração</span>
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+
+			<!-- Footer do site -->
+			<footer>2024 - Bruno Bulgaron</footer>
+		</div>
+
+		<!-- Botão flutuante para levar a pessoa de volta para o início da página -->
+		<span id="voltar-topo">Voltar para o topo</span>
+	</body>
+
+	<!-- Carrega o código JavaScript na página -->
+	<script src="script.js"></script>
+</html>
